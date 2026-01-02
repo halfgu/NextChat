@@ -23,7 +23,6 @@ import {
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
   Path,
-  REPO_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -237,8 +236,16 @@ export function SideBar(props: { className?: string }) {
         <Link to={Path.Settings}>
           <IconButton icon={<SettingsIcon />} shadow />
         </Link>
-        <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
-          <IconButton icon={<GithubIcon />} shadow />
+        <a
+          href="https://坤.love"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton
+            icon={<GithubIcon />}
+            aria="坤·ai 官网"
+            shadow
+          />
         </a>
       </div>
     </SideBarContainer>
